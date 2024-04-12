@@ -1,3 +1,4 @@
+123456
 <template>
   <LoginFormTitle v-show="getShow" class="enter-x" />
   <Form
@@ -119,7 +120,7 @@
   const rememberMe = ref(false);
 
   const formData = reactive({
-    account: 'vben',
+    account: 'liuxing',
     password: '123456',
   });
 

@@ -35,6 +35,22 @@ export function createFakeUserList() {
         },
       ],
     },
+    {
+      userId: '3',
+      username: 'liuxing',
+      password: '123456',
+      realName: 'liuxing',
+      avatar: '',
+      desc: 'tester',
+      token: 'fakeToken3',
+      homePath: '/dashboard/workbench',
+      roles: [
+        {
+          roleName: 'Tester',
+          value: 'test',
+        },
+      ],
+    },
   ];
 }
 

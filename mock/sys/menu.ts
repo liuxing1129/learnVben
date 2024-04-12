@@ -41,6 +41,44 @@ const dashboardRoute = {
   ],
 };
 
+const labRoute = {
+  path: '/lab',
+  name: 'Lab',
+  component: 'LAYOUT',
+  redirect: '/lab/index',
+  meta: {
+    title: '实验平台',
+    hideChildrenInMenu: false,
+    icon: 'bx:bx-home',
+  },
+  children: [
+    {
+      path: 'docs',
+      name: 'Docs',
+      component: '/lab/docs/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: true,
+        title: '在线文档',
+        currentActiveMenu: '/lab',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'online',
+      name: 'Online',
+      component: '/lab/online/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: true,
+        title: '在线实验',
+        currentActiveMenu: '/lab',
+        icon: 'bx:bx-home',
+      },
+    },
+  ],
+};
+
 const backRoute = {
   path: 'back',
   name: 'PermissionBackDemo',
@@ -259,6 +297,10 @@ export default [
         case '2':
           dashboardRoute.redirect = dashboardRoute.path + '/' + dashboardRoute.children[1].path;
           menu = [dashboardRoute, authRoute, levelRoute, linkRoute];
+          break;
+        case '3':
+          labRoute.redirect = labRoute.path + '/' + labRoute.children[0].path;
+          menu = [labRoute];
           break;
         default:
           menu = [];
