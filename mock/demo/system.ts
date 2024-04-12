@@ -92,7 +92,7 @@ const menuList = (() => {
             component: [
               '/dashboard/welcome/index',
               '/dashboard/analysis/index',
-              '/dashboard/workbench/index',
+              '/index',
               '/dashboard/test/index',
             ][j],
             orderNo: j + 1,
@@ -114,7 +114,7 @@ const menuList = (() => {
                   component: [
                     '/dashboard/welcome/index',
                     '/dashboard/analysis/index',
-                    '/dashboard/workbench/index',
+                    '/index',
                     '/dashboard/test/index',
                   ][j],
                   orderNo: j + 1,

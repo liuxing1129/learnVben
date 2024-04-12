@@ -43,7 +43,7 @@ export function createFakeUserList() {
       avatar: '',
       desc: 'tester',
       token: 'fakeToken3',
-      homePath: '/dashboard/workbench',
+      homePath: '/lab/docs', //默认会进入这个路径
       roles: [
         {
           roleName: 'Tester',

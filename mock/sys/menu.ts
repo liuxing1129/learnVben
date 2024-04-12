@@ -45,7 +45,7 @@ const labRoute = {
   path: '/lab',
   name: 'Lab',
   component: 'LAYOUT',
-  redirect: '/lab/index',
+  redirect: '/lab/docs/index',
   meta: {
     title: '实验平台',
     hideChildrenInMenu: false,
