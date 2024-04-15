@@ -16,21 +16,11 @@ import { router, setupRouter } from '@/router';
 import { setupRouterGuard } from '@/router/guard';
 import { setupStore } from '@/store';
 
-import VMdPreview from '@kangc/v-md-editor/lib/preview';
-import '@kangc/v-md-editor/lib/style/preview.css';
-import githubTheme from '@kangc/v-md-editor/lib/theme/github.js';
-import '@kangc/v-md-editor/lib/theme/style/github.css';
-
 import App from './App.vue';
-import hljs from 'highlight.js/lib/core';
 
-VMdPreview.use(githubTheme, {
-  Hljs: hljs,
-});
 
 async function bootstrap() {
   const app = createApp(App);
-  app.use(VMdPreview); 
   // Configure store
   // 配置 store
   setupStore(app);
