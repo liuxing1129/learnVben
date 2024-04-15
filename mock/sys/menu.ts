@@ -41,6 +41,69 @@ const dashboardRoute = {
   ],
 };
 
+//  预览文档
+const checkDocsRoute = {
+  path: '/checkDocs',
+  name: 'CheckDocs',
+  component: 'LAYOUT',
+  redirect: '/checkDocs/chapter1',
+  meta: {
+    title: '预览文档',
+    hideChildrenInMenu: false,
+    icon: 'bx:bx-home',
+  },
+  children: [
+    {
+      path: 'chapter1',
+      name: 'Chapter1',
+      component: '/checkDocs/chapter1/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第一章节',
+        currentActiveMenu: '/checkDocs',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'chapter2',
+      name: 'Chapter2',
+      component: '/checkDocs/chapter2/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第二章节',
+        currentActiveMenu: '/checkDocs',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'chapter3',
+      name: 'Chapter3',
+      component: '/checkDocs/chapter3/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第三章节',
+        currentActiveMenu: '/checkDocs',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'chapter4',
+      name: 'Chapter4',
+      component: '/checkDocs/chapter4/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第四章节',
+        currentActiveMenu: '/checkDocs',
+        icon: 'bx:bx-home',
+      },
+    },
+  ],
+};
+
 const labRoute = {
   path: '/lab',
   name: 'Lab',
@@ -300,7 +363,7 @@ export default [
           break;
         case '3':
           labRoute.redirect = labRoute.path + '/' + labRoute.children[0].path;
-          menu = [labRoute];
+          menu = [labRoute, checkDocsRoute];
           break;
         default:
           menu = [];
