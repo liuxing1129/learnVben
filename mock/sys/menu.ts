@@ -104,6 +104,68 @@ const checkDocsRoute = {
   ],
 };
 
+const onlineExperimentsRoute = {
+  path: '/onlineExperiments',
+  name: 'OnlineExperiments',
+  component: 'LAYOUT',
+  redirect: '/onlineExperiments/chapter1',
+  meta: {
+    title: '在线实验',
+    hideChildrenInMenu: false,
+    icon: 'bx:bx-home',
+  },
+  children: [
+    {
+      path: 'chapter1',
+      name: 'Chapter1',
+      component: '/onlineExperiments/chapter1/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第一章节',
+        currentActiveMenu: '/onlineExperiments',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'chapter2',
+      name: 'Chapter2',
+      component: '/onlineExperiments/chapter2/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第二章节',
+        currentActiveMenu: '/onlineExperiments',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'chapter3',
+      name: 'Chapter3',
+      component: '/onlineExperiments/chapter3/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第三章节',
+        currentActiveMenu: '/onlineExperiments',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
+      path: 'chapter4',
+      name: 'Chapter4',
+      component: '/onlineExperiments/chapter4/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: false,
+        title: '第四章节',
+        currentActiveMenu: '/onlineExperiments',
+        icon: 'bx:bx-home',
+      },
+    },
+  ],
+};
+
 const labRoute = {
   path: '/lab',
   name: 'Lab',
