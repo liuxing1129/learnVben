@@ -1,8 +1,10 @@
 <template>
-  <div> 在线文档 </div>
+  <div v-bind="$attrs">
+    
+  </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang='ts'>
 
 </script>
 

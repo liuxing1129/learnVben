@@ -1,6 +1,6 @@
 <template>
-  <div>
-    在线实验
+  <div v-bind="$attrs">
+    
   </div>
 </template>
 

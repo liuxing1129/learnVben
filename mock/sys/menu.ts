@@ -190,6 +190,18 @@ const labRoute = {
       },
     },
     {
+      path: 'board',
+      name: 'Board',
+      component: '/lab/board/index',
+      meta: {
+        hideMenu: false,
+        hideBreadcrumb: true,
+        title: '统计看板',
+        currentActiveMenu: '/lab',
+        icon: 'bx:bx-home',
+      },
+    },
+    {
       path: 'online',
       name: 'Online',
       component: '/lab/online/index',
@@ -425,7 +437,7 @@ export default [
           break;
         case '3':
           labRoute.redirect = labRoute.path + '/' + labRoute.children[0].path;
-          menu = [labRoute, checkDocsRoute];
+          menu = [labRoute, checkDocsRoute, onlineExperimentsRoute];
           break;
         default:
           menu = [];
